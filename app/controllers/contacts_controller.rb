@@ -6,9 +6,11 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      redirect_to new_contact_path, notice: 'Your message has been sent.'
+      flash[:success] = 'Your message has been sent.'
+      redirect_to new_contact_path
     else
-      redirect_to new_contact_path, notice: 'Something went wrong; please try again.'
+      flash[:warning] = 'Your message could not be sent due to an error.'
+      redirect_to new_contact_path
     end
 
   end
