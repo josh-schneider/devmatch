@@ -5,6 +5,7 @@
         A membership site where entrepreneurs can meet developers.
     </p>
 </div>
+<% unless current_user %>
 <div class="row" id="signUp">
     <div class="col-md-6">
         <div class="well">
@@ -26,3 +27,4 @@
         </div>
     </div>
 </div>
+<% end %>
