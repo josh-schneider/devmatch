@@ -23,7 +23,16 @@ class ProfilesController < ApplicationController
   end
   
   def update
+    @user = User.find(params[:user_id])
+    @profile = @user.profile
     
+    if @profile.update_attributes(profile_params)
+      flash[:success] = 'Your profile has been updated.'
+      redirect_to user_path(params[:user_id])
+    else
+      flash[:warning] = 'Your profile could not be updated. Please try again.'
+      render action: :edit
+    end    
   end
 
   private
