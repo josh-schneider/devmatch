@@ -1,3 +1,55 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.job-title-icon {
+  .fa {
+    display: inline-block;
+    width: 36px;
+    height: 24px;
+    padding: 1px 0px;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+  .fa-code {
+    color: #31708f;
+    background-color: #d9edf7;
+  }
+  .fa-lightbulb-o {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+  }
+  .fa-dollar {
+    color: #3c763d;
+    background-color: #dff0d8;
+  }
+  .fa-user {
+    color: #333333;
+    background-color: #e3e3e3;
+  }
+}
+
+
+.well.profile-description {
+  h3 {
+    margin-top: 0px;
+  }
+}
+
+.well.contact-info {
+  background-color: #d9edf7;
+  border-color: #31708f;
+}
+
+.well.own-contact-info {
+  background-color: #f2dede;
+  border-color: #a94442;
+  h6 {
+    color: #a94442;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 0px;
+  }
+}
