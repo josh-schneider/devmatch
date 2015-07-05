@@ -6,12 +6,12 @@
             <li>
                 <div class="well row <%= cycle('white-bg', '') %>">
                     <div class="col-sm-4 text-center">
-                        <% if user.profile.avatar_file_name %>
                         <%= link_to user do %>
+                        <% if user.profile.avatar_file_name %>
                         <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar' %>
-                        <% end %>
                         <% else %>
-                        &nbsp;
+                        <%= image_tag 'dummy.png', class: 'user-index-avatar' %>
+                        <% end %>
                         <% end %>
                     </div>
                     <div>
@@ -20,6 +20,9 @@
                         <% end %>
                         <p>
                             <%= user.profile.job_title %>
+                            <% if user.plan_id == 2 %>
+                            <span class="label label-success">PRO</span>
+                            <% end %>
                         </p>
                     </div>
                 </div>
