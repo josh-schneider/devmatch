@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby "2.1.6"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
@@ -47,6 +46,9 @@ gem 'figaro', '1.0.0'
 
 # Use Paperclip to handle image uploads
 gem 'paperclip', '4.2.1'
+
+# Use S3 to handle image storage (with DreamObjects)
+gem 'aws-s3', '0.6.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

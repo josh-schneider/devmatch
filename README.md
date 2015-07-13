@@ -1,7 +1,7 @@
-# devmatch-local
+# devmatch
 
-This is the repository for Josh Schneider's Dev Match (Coder Manual project) 
-implementation using Aptana Studio rather than Nitrous or Cloud9.
+Dev Match is a network for developers, entrepreneurs, and investors. Members 
+may share user profiles, and Pro members may view members' contact information.
 
 ## Official Statement
 Coder Manual Project Application
